@@ -1,0 +1,108 @@
+/* Базовые стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Шапка */
+  header {
+    background: #2c3e50;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header img {
+    height: 40px;
+  }
+  
+  nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  /* Формы */
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background: #2980b9;
+  }
+  
+  /* Список заявок */
+  .main_orders {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  
+  .orders > div {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 4px solid #3498db;
+  }
+  
+  /* Мобильная версия */
+  @media (max-width: 480px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    nav {
+      margin-top: 10px;
+      justify-content: center;
+    }
+    
+    form {
+      margin: 20px 10px;
+      padding: 15px;
+    }
+  }
